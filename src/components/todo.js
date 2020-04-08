@@ -36,7 +36,11 @@ const Todo = ({ todo, reloadTodos }) => {
             htmlFor={`todo_delete_${todo._id}`}
             className={styles.label}
          ></label>
-         <button onClick={handleDelete} className={styles.delete}>
+         <button
+            onClick={handleDelete}
+            className={styles.delete}
+            id={`todo_delete_${todo._id}`}
+         >
             <span role="img" aria-label="delete" title="delete this todo">
                ❌
             </span>
